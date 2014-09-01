@@ -56,6 +56,37 @@ textarea {
     padding: 0.2em 0;
 }
 
+[placeholder]:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+html ::-webkit-input-placeholder {
+    color: inherit;
+}
+
+html :-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+html ::-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+html :-ms-input-placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
